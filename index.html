@@ -1,188 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 | Planets</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Explore the 8 planets of our Solar System — an interactive, cinematic planet gallery.">
+    <meta name="theme-color" content="#05060c">
+    <title>The 8 Planets | Solar System Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@300;500;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="7.png">
-  </head>
+    <link rel="icon" href="7.png">
+</head>
 
-  <body>
-    <section id="planets">
-      <div class="container">
-        <h1 class="text-center heading">The 8 Planets</h1>
-        <h3 class="text-center subheading">in Our Solar System</h3>
-      </div>
-      <div class="container">
-        <div class="swiper slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="2.png" alt="Mercury">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Mercury</h2>
-                  <p class="desc">
-                    <span>
-                      The smallest and fastest planet, Mercury is the closest 
-                      planet to the Sun and whips around it every 88 Earth days.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="3.png" alt="Venus">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Venus</h2>
-                  <p class="desc">
-                    <span>
-                      Spinning in the opposite direction to most planets, Venus is 
-                      the hottest planet, and one of the brightest objects in the sky.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="4.png" alt="Earth">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Earth</h2>
-                  <p class="desc">
-                    <span>
-                      The place we call home, Earth is the third rock from the sun 
-                      and the only planet with known life on it - and lots of it too!
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="5.png" alt="Mars">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Mars</h2>
-                  <p class="desc">
-                    <span>
-                      The red planet is dusty, cold world with a 
-                      thin atmosphere and is home to four NASA robots.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="6.png" alt="Jupiter">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Jupiter</h2>
-                  <p class="desc">
-                    <span>
-                      Jupiter is a massive planet, twice the size of all other planets 
-                      combined, and has a centuries-old storm that is bigger than Earth.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="7.png" alt="Saturn">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Saturn</h2>
-                  <p class="desc">
-                    <span>
-                      The most recognizable planet with a system of icy rings, 
-                      Saturn is a very unique and interesting planet.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="8.png" alt="Uranus">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Uranus</h2>
-                  <p class="desc">
-                    <span>
-                      Uranus has a very unique rotation--it spins on its side 
-                      at an almost 90-degree angle, unlike other planets.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide slide">
-              <div class="slide-img">
-                <img src="9.png" alt="Neptune">
-              </div>
-              <div class="slide-content">
-                <div class="slide-content-bottom">
-                  <h2>Neptune</h2>
-                  <p class="desc">
-                    <span>
-                      Neptune is now the most distant planet and is a cold 
-                      and dark world nearly 3 billion miles from the Sun.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__ring"></div>
+        <p>Loading planets <span id="loaderPct">0%</span></p>
+    </div>
 
-          <div class="slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+    <!-- Background -->
+    <div class="bg" aria-hidden="true">
+        <div class="bg__stars" id="bgStars"></div>
+        <div class="bg__glow"></div>
+        <canvas class="bg__dust" id="dust"></canvas>
+        <div class="bg__vignette"></div>
+    </div>
 
+    <!-- Top bar -->
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="The 8 Planets — home">
+            <span class="brand__mark"><i class="ri-planet-line"></i></span>
+            <span class="brand__text">
+                <strong>The 8 Planets</strong>
+                <small>in Our Solar System</small>
+            </span>
+        </a>
+        <div class="topbar__right">
+            <button class="chip" id="autoBtn" aria-pressed="true" aria-label="Pause autoplay">
+                <i class="ri-pause-line"></i><span>Autoplay</span>
+            </button>
+            <div class="counter" aria-hidden="true">
+                <span class="counter__current" id="counterCurrent">01</span>
+                <span class="counter__sep"></span>
+                <span class="counter__total">08</span>
+            </div>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Main stage -->
+    <main class="stage" id="stage">
+        <div class="ghost" id="ghost" aria-hidden="true"></div>
+
+        <section class="info" aria-live="polite">
+            <p class="eyebrow">
+                <span class="eyebrow__num" id="eyebrowNum">01</span>
+                <span class="eyebrow__line"></span>
+                <span id="eyebrowType">Terrestrial planet</span>
+            </p>
+            <h1 class="name" id="planetName">Mercury</h1>
+            <p class="desc" id="planetDesc"></p>
+            <dl class="stats" id="stats"></dl>
+        </section>
+
+        <div class="planet-wrap">
+            <div class="planet-glow"></div>
+            <div class="orbit orbit--a"><span></span></div>
+            <div class="orbit orbit--b"><span></span></div>
+            <div class="planet" id="planet"></div>
+        </div>
+
+        <nav class="index" id="index" aria-label="Planet list"></nav>
+    </main>
+
+    <!-- Bottom dock -->
+    <footer class="dock">
+        <button class="arrow" id="prevBtn" aria-label="Previous planet"><i class="ri-arrow-left-line"></i></button>
+        <div class="thumbs" id="thumbs" role="tablist" aria-label="Choose a planet"></div>
+        <button class="arrow" id="nextBtn" aria-label="Next planet"><i class="ri-arrow-right-line"></i></button>
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+    </footer>
+
+    <p class="hint" aria-hidden="true">
+        <span class="hint--mouse"><kbd>←</kbd><kbd>→</kbd> or scroll to explore</span>
+        <span class="hint--touch">Swipe to explore</span>
+    </p>
+
     <script src="script.js"></script>
-  </body>
+</body>
 
 </html>
